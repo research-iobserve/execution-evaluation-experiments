@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # $1 = NAME, $2 = EXECUTABLE
 function checkExecutable() {
 	if [ "$2" == "" ] ; then
