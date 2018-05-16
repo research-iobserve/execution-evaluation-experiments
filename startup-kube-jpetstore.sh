@@ -43,7 +43,6 @@ done
 echo ">>>>>>>>>>> start jpetstore"
 
 cat $KUBERNETES_DIR/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
-cat $KUBERNETES_DIR/usa.yaml | sed "s/%LOGGER%/$LOGGER/g" > additional.yaml
 kubectl create -f start.yaml
 
 rm start.yaml
