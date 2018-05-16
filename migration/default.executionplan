@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.iobserve:ExecutionPlan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.iobserve="http://iobserve.org/ExecutionPlan">
+  <actions xsi:type="org.iobserve:DeployComponentAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:MigrateComponentStateAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+    <sourceAllocationContext href="runtimeModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:ConnectComponentAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="redeploymentModel/newAllocation.allocation#_x2H48AA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="redeploymentModel/newAllocation.allocation#_xlifQAA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="runtimeModel/newAllocation.allocation#_x2H48AA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="runtimeModel/newAllocation.allocation#_xlifQAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="redeploymentModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:BlockRequestsToComponentAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="redeploymentModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:FinishComponentAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:DisconnectComponentAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="redeploymentModel/newAllocation.allocation#_x2H48AA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="redeploymentModel/newAllocation.allocation#_xlifQAA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="runtimeModel/newAllocation.allocation#_x2H48AA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="runtimeModel/newAllocation.allocation#_xlifQAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="redeploymentModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:UndeployComponentAction">
+    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_0_9-wAA6EeiMaMdqfMnouQ"/>
+  </actions>
+</org.iobserve:ExecutionPlan>
