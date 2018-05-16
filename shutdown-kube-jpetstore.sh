@@ -24,8 +24,5 @@ sleep 120
 # shutdown analysis/collector
 echo "<<<<<<<<<<< term analysis"
 
-kill -TERM ${COLLECTOR_PID}
-rm collector.config
-
 echo "Done."
 # end
