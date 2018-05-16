@@ -11,8 +11,6 @@ else
 	exit 1
 fi
 
-. $BASE_DIR/common-functions.sh
-
 # shutdown jpetstore
 echo "<<<<<<<<<<< term jpetstore"
 

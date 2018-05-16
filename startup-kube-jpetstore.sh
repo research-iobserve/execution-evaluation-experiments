@@ -21,10 +21,6 @@ checkExecutable "iObserve Adaptation" "$ADAPTATION"
 checkExecutable "iObserve Execution" "$EXECUTION"
 
 # check for directories
-checkDirectory "Data" $DATA_DIR
-checkDirectory "Database" $DB_DIR
-checkDirectory "Fixed data" $FIXED_DIR
-checkDirectory "PCM" $PCM_DIR
 checkDirectory "Kubernetes" $KUBERNETES_DIR
 checkDirectory "Tools" $TOOLS_DIR
 
