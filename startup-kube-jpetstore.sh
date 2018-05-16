@@ -28,9 +28,6 @@ checkDirectory "Tools" $TOOLS_DIR
 #############################################
 # check if no leftovers are running
 
-# remove old data
-rm -rf $DATA_DIR/*
-
 # check all kubernetes services of the experiment are terminated
 kubectl delete service/jpetstore
 for I in frontend account catalog order ; do
