@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: extensions/v1beta1
 kind: Service
 metadata:
   name: jpetstore
@@ -10,7 +10,7 @@ spec:
     port: 8080
     targetPort: 8080
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
@@ -37,7 +37,7 @@ spec:
         - name: LOGGER
           value: %LOGGER%
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
@@ -64,7 +64,7 @@ spec:
         - name: LOGGER
           value: %LOGGER%
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
@@ -91,7 +91,7 @@ spec:
         - name: LOGGER
           value: %LOGGER%
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
