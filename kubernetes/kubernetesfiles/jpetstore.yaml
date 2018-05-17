@@ -15,7 +15,7 @@ kind: Deployment
 metadata:
   labels:
     processingRate: "15"
-  name: Order
+  name: order
 spec:
   replicas: 1
   selector:
@@ -42,7 +42,7 @@ kind: Deployment
 metadata:
   labels:
     processingRate: "12"
-  name: Account
+  name: account
 spec:
   replicas: 1
   selector:
@@ -69,7 +69,7 @@ kind: Deployment
 metadata:
   labels:
     processingRate: "12"
-  name: Catalog
+  name: catalog
 spec:
   replicas: 1
   selector:
@@ -96,7 +96,7 @@ kind: Deployment
 metadata:
   labels:
     processingRate: "9"
-  name: Frontend
+  name: frontend
 spec:
   replicas: 1
   selector:
