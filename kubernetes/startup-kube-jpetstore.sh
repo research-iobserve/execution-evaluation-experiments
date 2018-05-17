@@ -30,7 +30,7 @@ checkDirectory "Tools" $TOOLS_DIR
 
 # check all kubernetes services of the experiment are terminated
 kubectl delete service/jpetstore
-for I in frontend-rc account-rc catalog-rc order-rc ; do
+for I in Frontend Account Catalog Order ; do
 	kubectl delete deployments/$I
 done
 

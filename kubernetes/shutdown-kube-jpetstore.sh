@@ -15,7 +15,7 @@ fi
 echo "<<<<<<<<<<< term jpetstore"
 
 kubectl delete --grace-period=60 service/jpetstore
-for I in frontend-rc account-rc catalog-rc order-rc ; do
+for I in Frontend Account Catalog Order ; do
 	kubectl delete --grace-period=120 deployments/$I
 done
 
