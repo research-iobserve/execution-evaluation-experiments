@@ -23,22 +23,16 @@
     <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:BlockRequestsToComponentAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="redeploymentModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:FinishComponentAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DisconnectComponentAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
-    <targetProvidingAllocationContexts href="redeploymentModel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
-    <targetProvidingAllocationContexts href="runtimeModel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="redeploymentModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:UndeployComponentAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DisconnectNodeAction">
     <targetResourceContainer href="runtimeModel/ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
