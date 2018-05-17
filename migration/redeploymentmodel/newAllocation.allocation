@@ -15,11 +15,11 @@
     <assemblyContext_AllocationContext href="Assembly.system#_gXuPwAA3EeiMaMdqfMnouQ"/>
   </allocationContexts_Allocation>
   <allocationContexts_Allocation id="_0_9-wAA6EeiMaMdqfMnouQ" entityName="Allocation_Assembly_CatalogService">
-    <resourceContainer_AllocationContext href="ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
+    <resourceContainer_AllocationContext href="ResourceEnvironment.resourceenvironment#_sThlUAA1EeiMaMdqfMnouQ"/>
     <assemblyContext_AllocationContext href="Assembly.system#_dK2EEAA3EeiMaMdqfMnouQ"/>
   </allocationContexts_Allocation>
   <allocationContexts_Allocation id="_1LRP0AA6EeiMaMdqfMnouQ" entityName="Allocation_Assembly_AccountService">
-    <resourceContainer_AllocationContext href="ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
+    <resourceContainer_AllocationContext href="ResourceEnvironment.resourceenvironment#_K6XZkFnMEeiXof1znnLDQw"/>
     <assemblyContext_AllocationContext href="Assembly.system#_ciOk4AA3EeiMaMdqfMnouQ"/>
   </allocationContexts_Allocation>
   <allocationContexts_Allocation id="_1p1bIAA6EeiMaMdqfMnouQ" entityName="Allocation_Assembly_FrontendService">
