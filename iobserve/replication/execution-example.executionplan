@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.iobserve:ExecutionPlan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.iobserve="http://iobserve.org/ExecutionPlan">
+  <actions xsi:type="org.iobserve:DeployComponentAction">
+    <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+  </actions>
+  <actions xsi:type="org.iobserve:MigrateComponentStateAction">
+    <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+    <sourceAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:ConnectComponentAction">
+    <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+    <targetProvidingAllocationContexts href="redeploymentmodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="redeploymentmodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+  </actions>
+</org.iobserve:ExecutionPlan>

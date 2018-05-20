@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="ASCII"?>
 <org.iobserve:ExecutionPlan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.iobserve="http://iobserve.org/ExecutionPlan">
   <actions xsi:type="org.iobserve:AllocateNodeAction">
-    <targetResourceContainer href="redeploymentModel/ResourceEnvironment.resourceenvironment#_K6XZkFnMEeiXof1znnLDQw"/>
+    <targetResourceContainer href="redeploymentmodel/ResourceEnvironment.resourceenvironment#_K6XZkFnMEeiXof1znnLDQw"/>
   </actions>
   <actions xsi:type="org.iobserve:ConnectNodeAction">
-    <targetResourceContainer href="redeploymentModel/ResourceEnvironment.resourceenvironment#_K6XZkFnMEeiXof1znnLDQw"/>
-    <targetConnectors href="redeploymentModel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
-    <targetConnectors href="redeploymentModel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
+    <targetResourceContainer href="redeploymentmodel/ResourceEnvironment.resourceenvironment#_K6XZkFnMEeiXof1znnLDQw"/>
+    <targetConnectors href="redeploymentmodel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
+    <targetConnectors href="redeploymentmodel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DeployComponentAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:MigrateComponentStateAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
-    <sourceAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <sourceAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:ConnectComponentAction">
-    <targetAllocationContext href="redeploymentModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
-    <targetProvidingAllocationContexts href="redeploymentModel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
-    <targetProvidingAllocationContexts href="runtimeModel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="redeploymentModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="runtimeModel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="redeploymentmodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="runtimemodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="redeploymentmodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimemodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:BlockRequestsToComponentAction">
-    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:FinishComponentAction">
-    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DisconnectComponentAction">
-    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:UndeployComponentAction">
-    <targetAllocationContext href="runtimeModel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DisconnectNodeAction">
-    <targetResourceContainer href="runtimeModel/ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
-    <targetConnectors href="runtimeModel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
-    <targetConnectors href="runtimeModel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
+    <targetResourceContainer href="runtimemodel/ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
+    <targetConnectors href="runtimemodel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
+    <targetConnectors href="runtimemodel/ResourceEnvironment.resourceenvironment#_8l95EAA1EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DeallocateNodeAction">
-    <targetResourceContainer href="runtimeModel/ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
+    <targetResourceContainer href="runtimemodel/ResourceEnvironment.resourceenvironment#_rohggAA1EeiMaMdqfMnouQ"/>
   </actions>
 </org.iobserve:ExecutionPlan>

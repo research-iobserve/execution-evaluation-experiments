@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.iobserve:ExecutionPlan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.iobserve="http://iobserve.org/ExecutionPlan">
+  <actions xsi:type="org.iobserve:BlockRequestsToComponentAction">
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+    <targetRequiringAllocationContexts href="runtimemodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:FinishComponentAction">
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+  </actions>
+  <actions xsi:type="org.iobserve:DisconnectComponentAction">
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+    <targetProvidingAllocationContexts href="runtimemodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimemodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
+  </actions>
+  <actions xsi:type="org.iobserve:UndeployComponentAction">
+    <targetAllocationContext href="runtimemodel/newAllocation.allocation#_MODdwFw3Eei_Pr-AEFAvMw"/>
+  </actions>
+</org.iobserve:ExecutionPlan>
