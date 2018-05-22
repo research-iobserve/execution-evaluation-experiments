@@ -51,6 +51,7 @@ cat $IOBSERVE_DIR/execution.config | sed "s#%WORKING_DIRECTORY_EXECUTION%#$WORKI
 TEMP="${PLANNING_EXECUTABLE}2" # (workaround because sed -i did not work in the test environment)
 cat $PLANNING_EXECUTABLE | sed "s#PlanningMain #PlanningMainMockup #g" > $TEMP
 mv $TEMP $PLANNING_EXECUTABLE
+chmod 700 $PLANNING_EXECUTABLE
 
 # start services
 echo "Starting execution..."
