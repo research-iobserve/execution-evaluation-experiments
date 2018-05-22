@@ -31,10 +31,16 @@ done
 
 echo ">>>>>>>>>>> start jpetstore"
 
+# initialize different deployments depending on the scenario
+# only on resource container for account so far
 if [ $SCENARIO = "migration" ]; then
   cat $KUBERNETES_DIR/migration/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
-elif [ $SCENARIO = "replication" ] || [ $SCENARIO = "dereplication" ]; then
-  cat $KUBERNETES_DIR/replicationdDereplication/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
+# two resource containers for account but one without a deployed instance so far
+elif [ $SCENARIO = "replication" ]; then
+  cat $KUBERNETES_DIR/replication/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
+# two resource containers for account both with a deployed instance
+elif [ $SCENARIO = "dereplication" ]; then
+  cat $KUBERNETES_DIR/dereplication/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
 fi
 kubectl create -f start.yaml
 
