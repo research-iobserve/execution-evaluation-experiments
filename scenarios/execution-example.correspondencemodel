@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="ASCII"?>
 <correspondence:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:correspondence="https://www.iobserve-devops.net/model/correspondence">
   <parts>
-    <modelType href="runtimeModel/Assembly.system#_Q1a_gAA3EeiMaMdqfMnouQ"/>
+    <modelType href="runtimemodel/Assembly.system#_Q1a_gAA3EeiMaMdqfMnouQ"/>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="jpetstore-frontend-service">
-      <assembly href="runtimeModel/Assembly.system#_ZvkQAAA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_ZvkQAAA3EeiMaMdqfMnouQ"/>
     </entries>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="jpetstore-account-service">
-      <assembly href="runtimeModel/Assembly.system#_ciOk4AA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_ciOk4AA3EeiMaMdqfMnouQ"/>
     </entries>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="jpetstore-catalog-service">
-      <assembly href="runtimeModel/Assembly.system#_dK2EEAA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_dK2EEAA3EeiMaMdqfMnouQ"/>
     </entries>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="jpetstore-order-service">
-      <assembly href="runtimeModel/Assembly.system#_d_PVcAA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_d_PVcAA3EeiMaMdqfMnouQ"/>
     </entries>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="Database-Account">
-      <assembly href="runtimeModel/Assembly.system#_eyO4oAA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_eyO4oAA3EeiMaMdqfMnouQ"/>
     </entries>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="Database-Catalog">
-      <assembly href="runtimeModel/Assembly.system#_gXuPwAA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_gXuPwAA3EeiMaMdqfMnouQ"/>
     </entries>
     <entries xsi:type="correspondence:AssemblyEntry" implementationId="Database-Order">
-      <assembly href="runtimeModel/Assembly.system#_hL0mMAA3EeiMaMdqfMnouQ"/>
+      <assembly href="runtimemodel/Assembly.system#_hL0mMAA3EeiMaMdqfMnouQ"/>
     </entries>
   </parts>
 </correspondence:CorrespondenceModel>
