@@ -13,16 +13,8 @@ fi
 
 . $BASE_DIR/common-functions.sh
 
-
-# check adaptation
-checkExecutable "iObserve Adaptation" "$ADAPTATION"
-
-# check execution
-checkExecutable "iObserve Execution" "$EXECUTION"
-
 # check for directories
 checkDirectory "Kubernetes" $KUBERNETES_DIR
-checkDirectory "Tools" $TOOLS_DIR
 
 
 #############################################

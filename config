@@ -1,0 +1,31 @@
+################
+# directories
+# jpetstore configuration yaml
+KUBERNETES_DIR="$BASE_DIR/kubernetes"
+
+# configuration files for iobserve services
+IOBSERVE_DIR="$BASE_DIR/iobserve"
+
+# jpetstore pcm models for different scenarios
+SCENARIO_DIR="$BASE_DIR/scenarios"
+
+# conrete scenario to test
+SCENARIO="migration"
+
+# working dirs for services
+WORKING_DIR_PLANNING="$BASE_DIR/../working-dir-planning"
+WORKING_DIR_ADAPTATION="$BASE_DIR/../working-dir-adaptation"
+WORKING_DIR_EXECUTION="$BASE_DIR/../working-dir-execution"
+
+# executables for services
+PLANNING_EXECUTABLE="$BASE_DIR/../iobserve-distributions/planning-0.0.3-SNAPSHOT/bin/planning"
+ADAPTATION_EXECUTABLE="$BASE_DIR/../iobserve-distributions/adaptation-0.0.3-SNAPSHOT/bin/adaptation"
+EXECUTION_EXECUTABLE="$BASE_DIR/../iobserve-distributions/execution-0.0.3-SNAPSHOT/bin/execution"
+
+# docker repository
+DOCKER_REPO="blade1.se.internal:5000"
+
+# logger IP
+LOGGER=192.168.48.30
+
+# end
