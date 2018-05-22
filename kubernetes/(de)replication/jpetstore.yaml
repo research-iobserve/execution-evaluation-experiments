@@ -69,7 +69,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    processingRate: "12"
+    processingRate: "15"
   name: account2
 spec:
   replicas: 0

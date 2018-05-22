@@ -1,0 +1,123 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jpetstore
+spec:
+  selector:
+    name: jpetstore
+  ports:
+  - name: jpetstore # Actually, no port is needed.
+    port: 8080
+    targetPort: 8080
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    processingRate: "15"
+  name: order
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: order
+  template:
+    metadata:
+      labels:
+        component: order
+      name: order
+    spec:
+      hostname: order
+      subdomain: jpetstore
+      containers:
+      - image: blade1.se.internal:5000/jpetstore-order-service
+        name: order
+        resources: {}
+        env:
+        - name: LOGGER
+          value: %LOGGER%
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    processingRate: "12"
+  name: account
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: account
+  template:
+    metadata:
+      labels:
+        component: account
+      name: account
+    spec:
+      hostname: account
+      subdomain: jpetstore
+      containers:
+      - image: blade1.se.internal:5000/jpetstore-account-service
+        name: account
+        resources: {}
+        env:
+        - name: LOGGER
+          value: %LOGGER%
+          
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    processingRate: "12"
+  name: catalog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: catalog
+  template:
+    metadata:
+      labels:
+        component: catalog
+      name: catalog
+    spec:
+      hostname: catalog
+      subdomain: jpetstore
+      containers:
+      - image: blade1.se.internal:5000/jpetstore-catalog-service
+        name: catalog
+        resources: {}
+        env:
+        - name: LOGGER
+          value: %LOGGER%
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    processingRate: "9"
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: frontend
+  template:
+    metadata:
+      labels:
+        component: frontend
+      name: frontend
+    spec:
+      hostname: frontend
+      subdomain: jpetstore
+      containers:
+      - image: blade1.se.internal:5000/jpetstore-frontend-service
+        name: frontend
+        resources: {}
+        env:
+        - name: LOGGER
+          value: %LOGGER%
+        - name: JPETSTORE_DOMAIN
+          value: ".jpetstore"
+
