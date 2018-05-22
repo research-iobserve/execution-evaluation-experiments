@@ -48,32 +48,32 @@ cat $IOBSERVE_DIR/adaptation.config | sed "s#%WORKING_DIRECTORY_ADAPTATION%#$WOR
 cat $IOBSERVE_DIR/execution.config | sed "s#%WORKING_DIRECTORY_EXECUTION%#$WORKING_DIR_EXECUTION#g" > $WORKING_DIR_EXECUTION/execution.config
 
 # replace PlanningMain by PlanningMainMockup in execution script to exclude model optimization with PerOpteryx from planning
-TEMP="${PLANNING_EXECUTABLE}2" # (sed -i did not work in the test environment)
+TEMP="${PLANNING_EXECUTABLE}2" # (workaround because sed -i did not work in the test environment)
 cat $PLANNING_EXECUTABLE | sed "s#PlanningMain #PlanningMainMockup #g" > $TEMP
 mv $TEMP $PLANNING_EXECUTABLE
 
 # start services
 echo "Starting execution..."
-#$EXECUTION_EXECUTABLE -c $WORKING_DIR_EXECUTION/execution.config & 
-#PID1=$!
+$EXECUTION_EXECUTABLE -c $WORKING_DIR_EXECUTION/execution.config & 
+PID1=$!
 
 sleep 15 
 
 echo "Starting adaptation..."
-#$ADAPTATION_EXECUTABLE -c $WORKING_DIR_ADAPTATION/adaptation.config &
-#PID2=$!
+$ADAPTATION_EXECUTABLE -c $WORKING_DIR_ADAPTATION/adaptation.config &
+PID2=$!
 
 sleep 15
 
 echo "Starting planning..."
-#$PLANNING_EXECUTABLE -c $WORKING_DIR_PLANNING/planning.config &
+$PLANNING_EXECUTABLE -c $WORKING_DIR_PLANNING/planning.config &
 
-sleep 3c0
+sleep 30
 
 # stop services 
 echo "Terminating..."
 
-#kill $PID2
-#kill $PID1
+kill $PID2
+kill $PID1
 
 echo "iObserve terminated."
