@@ -63,6 +63,34 @@ spec:
         env:
         - name: LOGGER
           value: %LOGGER%
+          
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    processingRate: "12"
+  name: account2
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      component: account
+  template:
+    metadata:
+      labels:
+        component: account
+      name: account
+    spec:
+      hostname: account
+      subdomain: jpetstore
+      containers:
+      - image: blade1.se.internal:5000/jpetstore-account-service
+        name: account
+        resources: {}
+        env:
+        - name: LOGGER
+          value: %LOGGER%
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment

@@ -28,7 +28,7 @@
       <processingRate_ProcessingResourceSpecification specification="12"/>
     </activeResourceSpecifications_ResourceContainer>
   </resourceContainer_ResourceEnvironment>
-  <resourceContainer_ResourceEnvironment id="_K6XZkFnMEeiXof1znnLDQw" entityName="Account">
+  <resourceContainer_ResourceEnvironment id="_K6XZkFnMEeiXof1znnLDQw" entityName="Account2">
     <activeResourceSpecifications_ResourceContainer id="_uwik4AA2EeiMaMdqfMnouQ">
       <schedulingPolicy href="pathmap://PCM_MODELS/Palladio.resourcetype#ProcessorSharing"/>
       <activeResourceType_ActiveResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
