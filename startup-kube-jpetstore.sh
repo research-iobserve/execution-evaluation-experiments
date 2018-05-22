@@ -34,7 +34,7 @@ echo ">>>>>>>>>>> start jpetstore"
 if [ $SCENARIO = "migration" ]; then
   cat $KUBERNETES_DIR/migration/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
 elif [ $SCENARIO = "replication" ] || [ $SCENARIO = "dereplication" ]; then
-  cat $KUBERNETES_DIR/(de)replication/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
+  cat $KUBERNETES_DIR/replicationdDereplication/jpetstore.yaml | sed "s/%LOGGER%/$LOGGER/g" > start.yaml
 fi
 kubectl create -f start.yaml
 
