@@ -51,17 +51,27 @@ cat $IOBSERVE_DIR/execution.config | sed "s#%WORKING_DIRECTORY_EXECUTION%#$WORKI
 cat $PLANNING_EXECUTABLE | sed -i '' "s#PlanningMain #PlanningMainMockup #g" $PLANNING_EXECUTABLE
 
 # start services
-echo starting execution...
-$EXECUTION_EXECUTABLE -c $WORKING_DIR_EXECUTION/execution.config &
+echo "Starting execution..."
+$EXECUTION_EXECUTABLE -c $WORKING_DIR_EXECUTION/execution.config & 
+PID1=$!
 
-sleep 5 
+sleep 15 
 
-echo starting adaptation...
+echo "Starting adaptation..."
 $ADAPTATION_EXECUTABLE -c $WORKING_DIR_ADAPTATION/adaptation.config &
+PID2=$!
 
-sleep 5
+sleep 15
 
-echo starting planning...
-$PLANNING_EXECUTABLE -c $WORKING_DIR_PLANNING/planning.config
+echo "Starting planning..."
+$PLANNING_EXECUTABLE -c $WORKING_DIR_PLANNING/planning.config &
+
+sleep 30
 
 # stop services 
+echo "Terminating..."
+
+kill $PID2
+kill $PID1
+
+echo "iObserve terminated."
