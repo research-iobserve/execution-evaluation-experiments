@@ -22,7 +22,7 @@ checkDirectory "Kubernetes" $KUBERNETES_DIR
 
 # check all kubernetes services of the experiment are terminated
 kubectl delete service/jpetstore
-for I in frontend account catalog order ; do
+for I in frontend account account2 catalog order ; do
 	kubectl delete deployments/$I
 done
 
