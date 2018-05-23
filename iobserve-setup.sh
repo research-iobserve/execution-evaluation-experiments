@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # execute setup
-
 BASE_DIR=$(cd "$(dirname "$0")"; pwd)
 
 if [ -f $BASE_DIR/config ] ; then

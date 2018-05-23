@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# execute setup
+BASE_DIR=$(cd "$(dirname "$0")"; pwd)
+
+if [ -f $BASE_DIR/config ] ; then
+	. $BASE_DIR/config
+else
+	echo "Missing configuration"
+	exit 1
+fi
+
+. $BASE_DIR/common-functions.sh
+
+
+
 # check executables
 checkExecutable "iObserve Planning" "$PLANNING_EXECUTABLE"
 
