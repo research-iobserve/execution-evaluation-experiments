@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # check executables
 checkExecutable "iObserve Execution" "$EXECUTION_EXECUTABLE"
 

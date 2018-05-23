@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # check executables
 checkExecutable "iObserve Planning" "$PLANNING_EXECUTABLE"
 checkExecutable "iObserve Adaptation" "$ADAPTATION_EXECUTABLE"
