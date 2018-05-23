@@ -30,6 +30,8 @@ checkDirectory "Planning working directory" $WORKING_DIR_PLANNING
 checkDirectory "Adaptation working directory" $WORKING_DIR_ADAPTATION
 checkDirectory "Execution working directory" $WORKING_DIR_EXECUTION
 
+echo "Setting up iObserve workspaces..."
+
 # clear working directories
 rm -rf $WORKING_DIR_PLANNING/*
 rm -rf $WORKING_DIR_ADAPTATION/*
@@ -53,28 +55,4 @@ cat $PLANNING_EXECUTABLE | sed "s#PlanningMain #PlanningMainMockup #g" > $TEMP
 mv $TEMP $PLANNING_EXECUTABLE
 chmod 700 $PLANNING_EXECUTABLE
 
-# start services
-echo "Starting execution..."
-$EXECUTION_EXECUTABLE -c $WORKING_DIR_EXECUTION/execution.config & 
-PID1=$!
-
-sleep 15 
-
-echo "Starting adaptation..."
-$ADAPTATION_EXECUTABLE -c $WORKING_DIR_ADAPTATION/adaptation.config &
-PID2=$!
-
-sleep 15
-
-echo "Starting planning..."
-$PLANNING_EXECUTABLE -c $WORKING_DIR_PLANNING/planning.config &
-
-sleep 30
-
-# stop services 
-echo "Terminating..."
-
-kill $PID2
-kill $PID1
-
-echo "iObserve terminated."
+echo "Done."
