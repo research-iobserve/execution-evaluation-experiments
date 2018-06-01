@@ -22,12 +22,15 @@
   </actions>
   <actions xsi:type="org.iobserve:BlockRequestsToComponentAction">
     <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimemodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:FinishComponentAction">
     <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:DisconnectComponentAction">
     <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
+    <targetProvidingAllocationContexts href="runtimemodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
+    <targetRequiringAllocationContexts href="runtimemodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:UndeployComponentAction">
     <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
