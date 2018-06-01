@@ -18,9 +18,7 @@
   <actions xsi:type="org.iobserve:ConnectComponentAction">
     <targetAllocationContext href="redeploymentmodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
     <targetProvidingAllocationContexts href="redeploymentmodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
-    <targetProvidingAllocationContexts href="runtimemodel/newAllocation.allocation#_xLwtUAA6EeiMaMdqfMnouQ"/>
     <targetRequiringAllocationContexts href="redeploymentmodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
-    <targetRequiringAllocationContexts href="runtimemodel/newAllocation.allocation#_1p1bIAA6EeiMaMdqfMnouQ"/>
   </actions>
   <actions xsi:type="org.iobserve:BlockRequestsToComponentAction">
     <targetAllocationContext href="runtimemodel/newAllocation.allocation#_1LRP0AA6EeiMaMdqfMnouQ"/>
