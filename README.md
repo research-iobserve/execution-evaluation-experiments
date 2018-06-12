@@ -18,3 +18,6 @@ The following scripts are included and should be executed in the given order:
 As an alternative to the **iobserve-run-all** you can use the following scripts:
 * **iobserve-run-planning**, **iobserve-run-adaptation**, and **iobserve-run-execution** can be used to start the different services indepentently.
 * **iobserve-setup-planning** can be used to (re)configure only the planning service while adaptation and execution keep running. Before reconfiguring the planning service a new scenario may be chosen by editing the config file.
+
+
+The evaluaton results can be found at the lbl-results branch in the results folder.
